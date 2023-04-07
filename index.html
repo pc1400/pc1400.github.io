@@ -6,64 +6,26 @@
   <title>Patrick Cunningham</title>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://kit.fontawesome.com/dd94706ecb.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
   <div class="navigation-bar" id="top">
     <ul>
-      <li><a href="#contact">Contact</a></li>
-      <li><a href="#blog">Blog</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li style="float:left;"><a href="#top">Patrick Cunningham</a></li>
+      <div class="right-links">
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#blog">Blog</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#about">About</a></li>
+      </div>
+      
+      <li style="float:left;"><a  href="#top"><i class="fa-solid fa-hourglass fa-rotate-90 fa-xl"></i></a></li>
+      <!-- <li style="float:left;"><a href="#top">Patrick Cunningham</a></li> -->
+      
     </ul>
   </div>
 
-  <section class="projects" id="projects">
-      <div class="projects-container">
-        <div class="project-container project-card">
-          <img
-            src="assets/pantry.jpeg"
-            alt="expense-tracker"
-            loading="lazy"
-            class="project-pic"
-          />
-          <h3 class="project-title">Pantri</h3>
-          <p class="project-details">
-            Pantri is a machine learning mobile app made with Node.js, React Native, Python, and TensorFlow. Pantri scans a user's pantry for ingredients using image 
-            recognition and generate recipes specific to these ingredients.  
-          </p>
-          <a href="https://www.youtube.com/watch?v=UXeodcCkmJk" target="_blank" class="project-link">Check it Out</a>
-        </div>
-        <div class="project-container project-card">
-          <img
-            src="assets/platform.jpeg"
-            alt="netflic-clone"
-            loading="lazy"
-            class="project-pic"
-          />
-          <h3 class="project-title">HackIllinois 2023</h3>
-          <p class="project-details">
-            I worked with another teamate at the University of Illinois at Urbana-Champaign's annual hackathon to build an infinite 2D sidescroller using Pygame.
-          </p>
-          <a href="https://devpost.com/software/platformer-jre98g" target="_blank" class="project-link">Check it Out</a>
-        </div>
-        <div class="project-container project-card">
-          <img
-            src="assets/poker.jpeg"
-            alt="expense-tracker"
-            loading="lazy"
-            class="project-pic"
-          />
-          <h3 class="project-title">Poker Game</h3>
-          <p class="project-details">
-            I created a realistic poker game using Rust. The game simulates other player acitivity and simulated real game mechanics such as card dealing, hand evaluation,
-            and running chip totals.
-          </p>
-          <a href="https://www.youtube.com/watch?v=uWpSVAkK-sU&t=1s" target="_blank" class="project-link">Check it Out</a>
-        </div>
-      </div>
-    </section>
+
 
   <section id="about">
     
@@ -109,7 +71,55 @@
     
   </section>
 
+    <section class="projects" id="projects">
+      <h1 class="transition-title">Recent Projects</h1>
+      <div class="projects-container">
+        <div class="project-container project-card">
+          <img
+            src="assets/pantry.jpeg"
+            alt="expense-tracker"
+            loading="lazy"
+            class="project-pic"
+          />
+          <h3 class="project-title">Pantri</h3>
+          <p class="project-details">
+            Pantri is a machine learning mobile app made with Node.js, React Native, Python, and TensorFlow. Pantri scans a user's pantry for ingredients using image 
+            recognition and generate recipes specific to these ingredients.  
+          </p>
+          <a href="https://www.youtube.com/watch?v=UXeodcCkmJk" target="_blank" class="project-link">Check it Out</a>
+        </div>
+        <div class="project-container project-card">
+          <img
+            src="assets/platform.jpeg"
+            alt="netflic-clone"
+            loading="lazy"
+            class="project-pic"
+          />
+          <h3 class="project-title">HackIllinois 2023</h3>
+          <p class="project-details">
+            I worked with another teamate at the University of Illinois at Urbana-Champaign's annual hackathon to build an infinite 2D sidescroller using Pygame.
+          </p>
+          <a href="https://devpost.com/software/platformer-jre98g" target="_blank" class="project-link">Check it Out</a>
+        </div>
+        <div class="project-container project-card">
+          <img
+            src="assets/poker.jpeg"
+            alt="expense-tracker"
+            loading="lazy"
+            class="project-pic"
+          />
+          <h3 class="project-title">Poker Game</h3>
+          <p class="project-details">
+            I created a realistic poker game using Rust. The game simulates other player acitivity and simulated real game mechanics such as card dealing, hand evaluation,
+            and running chip totals.
+          </p>
+          <a href="https://www.youtube.com/watch?v=uWpSVAkK-sU&t=1s" target="_blank" class="project-link">Check it Out</a>
+        </div>
+      </div>
+    </section>
+
   <section id="blog">
+    <h1 class="transition-title">What I'm Thinking About</h1>
     <div class="post">
       <button type="button" class="collapsible open closed">Building a Website</button>
       <div class="content">
@@ -213,9 +223,9 @@
   </section>
 
   <section id="contact">
-    <h1 class="contact">Contact</h1>
-    <h2><a class="gmail" href="">patrickmcunnin@gmail.com <i class="fa fa-envelope" style="font-size:20px"></i></a></h2>
-    <h2><a class="linkedin" href="https://www.linkedin.com/in/patrckcunningham/" target="_blank">Linkedin <i class="fa fa-linkedin-square"></i></a></h2>
+    <h1 class="contact" style="color: white">Contact</h1>
+    <h2><a class="gmail" href="mailto:patrickmcunnin@gmail.com">patrickmcunnin@gmail.com <i class="fa fa-envelope" style="font-size:20px; color: white"></i></a></h2>
+    <h2><a class="linkedin" href="https://www.linkedin.com/in/patrckcunningham/" target="_blank">Linkedin <i class="fa fa-linkedin-square" style="color: white"></i></a></h2>
     <h2><a class="github" href="https://github.com/pc1400" target="_blank">GitHub <i class="fa fa-github"></i></a></h2>
 
     <footer>
