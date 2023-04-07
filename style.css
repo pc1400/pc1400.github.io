@@ -27,21 +27,42 @@ body{
 
 h1{
   text-align: center;
+  font-weight: 300;
+}
+
+.transition-title{
+  font-size: 40px;
+  margin-bottom: 5%;
+  margin-top: 5%;
 }
 
 p{
-  margin-top: 30px;
+  margin-top: 7%;
 }
 
 ul{
+  background-color: white;
   list-style-type: none;
   overflow: hidden;
   position: fixed;
   top: 0;
   width: 100%;
-  height: 50px;
-  background-color: white;
+  height: 60px;
   padding-top: 8px;
+}
+
+.right-links{
+  margin-top: 10px;
+  margin-right: 50px;
+}
+
+.fa-hourglass{
+  margin-top: 10px;
+  margin-left: 90px;
+}
+
+.fa-hourglass:hover{
+  color: #30c331;
 }
 
 li{
@@ -54,12 +75,13 @@ li a {
   display: block;
   padding: 14px 16px;
   text-decoration: underline 0.10em rgba(0, 0, 0, 0);
-  transition: text-decoration-color 350ms;
+  transition: text-decoration-color 350ms, color 350ms;
   text-underline-offset: 0.4em;
 }
 
 li a:hover {
-  text-decoration-color: rgba(0, 0, 0, 1);
+  color: #30c331;
+  text-decoration-color: #30c331;
 }
 
 section{
@@ -74,7 +96,8 @@ section{
 }
 
 .first-half{
-  margin-bottom: 100px;
+  margin-top: 10%;
+  margin-bottom: 10%;
   margin-left: auto;  
   margin-right: auto;
   max-width: 1500px;
@@ -108,9 +131,9 @@ img{
 }
 
 #contact{
-  height: 400px;
-  /* background-color: #fafafa; */
-  background-color: white;
+  height: 500px;
+  background-color: black;
+  margin-top: 75px;
 }
 
 .contact{
@@ -135,17 +158,32 @@ h2 a{
 }
 
 h2 a:hover{
-  color: #e04b43;
+  color: #30c331;
 }
 
 .fa-envelope{
   font-size:4px
 }
 
+.gmail{
+  color:white;
+}
+
+.gmail:hover{
+  color:#e04b43;
+}
+
+.linkedin{
+  color:white;
+}
+
 .linkedin:hover{
   color:#0072B1;
 }
 
+.github{
+  color:white;
+}
 .github:hover{
   color:#3fb64f;
 }
@@ -153,15 +191,14 @@ h2 a:hover{
 
 footer{
   font-weight: 100;
-  background-color: white;
-  margin: 20px auto;
-  margin-top: 60;
+  margin-top: 10%;
   text-align: center;
 }
 
 #blog{
   height: auto;
-  margin-bottom: 60px;
+  margin-bottom: 10%;
+  margin-top: 5%;
 }
 
 button{
@@ -172,6 +209,7 @@ button{
   background-color: white;
   cursor: pointer;
   padding: 25px;
+  padding-left: 80px;
   border: none;
   text-align: left;
   outline: none;
@@ -196,6 +234,7 @@ button{
   max-height: 0px;
   width: 50%;
   overflow: hidden;
+  padding-left: 50px;
 }
 
 .left{
@@ -229,8 +268,8 @@ button{
 }
 
 .cv:hover{
-  color: #ef1a25;
-  border-color: #ef1a25;
+  color: #30c331;
+  border-color: #30c331;
 }
 
 hr {
@@ -243,12 +282,24 @@ i{
   transition: color 350ms;
 }
 
+.fa-envelope{
+  color:white;
+}
+
 .fa-envelope:hover{
   color:#e04b43;
 }
 
+.fa-linkedin-square{
+  color:white;
+}
+
 .fa-linkedin-square:hover{
   color:#0072B1;
+}
+
+.fa-github{
+  color:white;
 }
 
 .fa-github:hover{
@@ -292,8 +343,10 @@ i{
 }
 
 .projects {
+  /* background-color: #1a1c20; */
   padding: 32px 0;
   margin-top: 5%;
+  margin-bottom: 5%;
 }
 
 .projects-title {
@@ -363,4 +416,13 @@ h3{
 
 .project-link:hover {
   text-decoration-color: black;
+}
+.copyright{
+  background-color: black;
+  color:white;
+}
+
+.breaker{
+  height: 50px; 
+  background-color: black;
 }
